@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" type="image/webp" href="kale-su-aritma-logo.webp" />
+
+  <title>Su Arıtma ve Sağlıklı Yaşam Blogu | Kale Su Arıtma</title>
+  <link rel="canonical" href="https://www.kalesuaritma.com/blog.html" />
+  <meta name="description" content="Isparta su kalitesi, su arıtma cihazı seçimi, filtre değişim periyotları ve kireçli suyun etkileri hakkında SEO uyumlu bilgilendirici rehberler." />
+  
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:locale"      content="tr_TR" />
+  <meta property="og:url"         content="https://www.kalesuaritma.com/blog.html" />
+  <meta property="og:title"       content="Su Arıtma ve Sağlıklı Yaşam Blogu | Kale Su Arıtma" />
+  <meta property="og:description" content="Isparta su kalitesi, cihaz seçimi ve filtre bakımı hakkında bilmeniz gereken her şey." />
+  <meta property="og:image"       content="https://www.kalesuaritma.com/og-image.jpg" />
+  <meta name="twitter:card"        content="summary_large_image" />
+
+  <style>
+    :root {
+      --bg:      oklch(97.5% 0.003 240);
+      --canvas:  oklch(99% 0.001 240);
+      --fg:      oklch(16% 0.015 250);
+      --muted:   oklch(44% 0.014 250);
+      --border:  oklch(90% 0.006 250);
+      --accent:  oklch(55% 0.17 210);
+      --surface: oklch(100% 0 0);
+      --warm-bg: oklch(96% 0.006 240);
+      --radius-sm: 12px;
+      --radius-md: 20px;
+      --radius-lg: 28px;
+      --radius-xl: 36px;
+      --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+      --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--canvas);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    .page { position: relative; z-index: 1; }
+
+    section {
+      padding: 100px 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ── NAV ── */
+    .nav {
+      position: fixed; top: 16px; left: 50%;
+      transform: translateX(-50%);
+      z-index: 100;
+      background: oklch(100% 0 0 / 0.94);
+      border: 1px solid oklch(92% 0.005 250 / 0.6);
+      border-radius: var(--radius-xl);
+      padding: 6px 10px 6px 8px;
+      display: flex; align-items: center; gap: 4px;
+      box-shadow: 0 2px 16px oklch(0% 0 0 / 0.05);
+    }
+    .nav-brand {
+      display: flex; align-items: center; gap: 10px;
+      font-family: var(--font-display); font-weight: 700; font-size: 16px;
+      letter-spacing: -0.01em; padding: 6px 14px 6px 6px; color: var(--fg); white-space: nowrap;
+      text-decoration: none;
+    }
+    .nav-logo {
+      width: 42px; height: 42px; border-radius: var(--radius-sm); flex-shrink: 0;
+      object-fit: contain;
+    }
+    .nav-links { display: flex; gap: 1px; }
+    .nav-links a {
+      text-decoration: none; color: var(--muted); font-size: 14px; font-weight: 500;
+      padding: 8px 14px; border-radius: 999px; white-space: nowrap;
+      transition: color 0.12s, background-color 0.12s;
+    }
+    .nav-links a:hover { color: var(--fg); background: oklch(0% 0 0 / 0.04); }
+    .nav-cta {
+      background: var(--accent); color: #fff; font-weight: 600; padding: 9px 20px;
+      border-radius: 999px; font-size: 14px; margin-left: 6px; text-decoration: none;
+      white-space: nowrap; box-shadow: 0 4px 16px oklch(55% 0.17 210 / 0.18);
+      transition: box-shadow 0.15s;
+    }
+    .nav-cta:hover { box-shadow: 0 6px 22px oklch(55% 0.17 210 / 0.28); }
+
+    /* ── HERO ── */
+    .hero {
+      padding-top: 180px; padding-bottom: 60px; text-align: center;
+      display: flex; flex-direction: column; align-items: center; gap: 24px;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: oklch(94% 0.012 250); border: 1px solid var(--border);
+      border-radius: 999px; padding: 7px 20px; font-size: 13px;
+      font-weight: 600; color: var(--muted); letter-spacing: 0.02em;
+    }
+    .hero-badge span {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: oklch(65% 0.2 140);
+      box-shadow: 0 0 8px oklch(65% 0.2 140 / 0.45);
+    }
+    .hero h1 {
+      font-family: var(--font-display); font-size: clamp(36px, 6vw, 64px);
+      font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; max-width: 850px;
+    }
+    .hero h1 em { font-style: normal; color: var(--accent); }
+    .hero p {
+      font-size: clamp(16px, 2vw, 19px); color: var(--muted);
+      max-width: 600px; line-height: 1.5;
+    }
+
+    /* ── BLOG GRID ── */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 32px;
+      margin-top: 20px;
+    }
+    .blog-card {
+      background: var(--surface);
+      border-radius: var(--radius-xl);
+      border: 1.5px solid oklch(92% 0.005 250);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 1px 0 oklch(0% 0 0 / 0.04), 0 3px 16px oklch(0% 0 0 / 0.04);
+      transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    }
+    .blog-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 1px 0 oklch(0% 0 0 / 0.06), 0 8px 32px oklch(0% 0 0 / 0.08);
+    }
+    .blog-card-visual {
+      aspect-ratio: 16/10;
+      background: oklch(96% 0.006 240);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 54px;
+      border-bottom: 1px solid var(--border);
+    }
+    .bc-1 { background: oklch(94% 0.02 20); }
+    .bc-2 { background: oklch(94% 0.02 210); }
+    .bc-3 { background: oklch(94% 0.02 160); }
+    .bc-4 { background: oklch(94% 0.02 280); }
+
+    .blog-card-content {
+      padding: 24px 28px 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      flex: 1;
+    }
+    .blog-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .blog-card-meta .tag {
+      background: oklch(94% 0.03 210);
+      color: oklch(48% 0.15 210);
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 999px;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+    .blog-card h3 {
+      font-family: var(--font-display);
+      font-size: 21px;
+      font-weight: 700;
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+    }
+    .blog-card h3 a {
+      color: var(--fg);
+      text-decoration: none;
+      transition: color 0.12s;
+    }
+    .blog-card h3 a:hover {
+      color: var(--accent);
+    }
+    .blog-card p {
+      color: var(--muted);
+      font-size: 14.5px;
+      line-height: 1.6;
+      flex: 1;
+    }
+    .blog-card-footer {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+    }
+    .read-more-link {
+      font-size: 14.5px;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: opacity 0.12s;
+    }
+    .read-more-link:hover {
+      opacity: 0.85;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      border-top: 1px solid var(--border); padding: 40px 24px;
+      max-width: 1200px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 16px; font-size: 14px; color: var(--muted);
+    }
+    .footer-brand { font-weight: 700; color: var(--fg); font-family: var(--font-display); text-decoration: none; }
+    .footer-links { display: flex; gap: 20px; }
+    .footer-links a { color: var(--muted); text-decoration: none; transition: color 0.12s; }
+    .footer-links a:hover { color: var(--fg); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      section { padding: 64px 20px; }
+      .hero { padding-top: 140px; padding-bottom: 40px; }
+      .nav { top: 8px; padding: 4px 8px 4px 6px; border-radius: var(--radius-lg); gap: 0; }
+      .nav-brand { font-size: 13px; padding: 6px 8px; gap: 8px; }
+      .nav-logo { width: 36px; height: 36px; }
+      .nav-links a { font-size: 12px; padding: 6px 8px; }
+      .nav-cta { font-size: 12px; padding: 6px 12px; }
+      .blog-grid { grid-template-columns: 1fr; gap: 24px; }
+      .footer { flex-direction: column; text-align: center; }
+    }
+    @media (max-width: 480px) {
+      .nav { width: calc(100% - 12px); justify-content: space-between; border-radius: var(--radius-lg); }
+      .nav-links { display: none; }
+      .hero h1 { font-size: 32px; }
+      .hero p { font-size: 15px; }
+      .blog-card-content { padding: 20px 22px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- ═══════ NAV ═══════ -->
+    <nav class="nav" aria-label="Ana menü">
+      <a href="index.html" class="nav-brand" aria-label="Kale Su Arıtma ana sayfa">
+        <img class="nav-logo" src="kale-su-aritma-logo.webp" alt="Kale Su Arıtma logosu" width="42" height="42" />
+        Kale Su Arıtma
+      </a>
+      <div class="nav-links">
+        <a href="index.html#faydalar">Faydalar</a>
+        <a href="index.html#urunler">Ürünler</a>
+        <a href="index.html#yorumlar">Yorumlar</a>
+        <a href="index.html#iletisim">İletişim</a>
+      </div>
+      <a href="tel:+905462574773" class="nav-cta">📞 Hemen Ara</a>
+    </nav>
+
+    <!-- ═══════ HERO ═══════ -->
+    <section>
+      <div class="hero">
+        <div class="hero-badge"><span></span> Bilgi Paylaşımı & Sağlık Rehberi</div>
+        <h1>Kale Su Arıtma <em>Bilgi Bankası</em></h1>
+        <p>Isparta'daki şebeke suyu kalitesi, arıtma sistemlerinin çalışma mekanizmaları ve eviniz için en doğru çözümler hakkında uzman yazılarımız.</p>
+      </div>
+    </section>
+
+    <!-- ═══════ BLOG GRID ═══════ -->
+    <section style="padding-top: 0;">
+      <div class="blog-grid">
+
+        <!-- Kart 1: Isparta Suyu Sertlik -->
+        <article class="blog-card">
+          <div class="blog-card-visual bc-1">🏔️</div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span class="tag">Isparta Suyu</span>
+              <time datetime="2026-05-30">30 Mayıs 2026</time>
+            </div>
+            <h3><a href="isparta-suyu-neden-sert.html">Isparta'nın Şebeke Suyu Neden Sert ve Kireçlidir?</a></h3>
+            <p>Isparta bölgesinin karstik ve kireç taşı ağırlıklı jeolojik yapısının yeraltı sularına etkilerini, sert suyun tesisatınıza, cildinize ve çayınızın tadına olan olumsuz yansımalarını inceliyoruz.</p>
+            <div class="blog-card-footer">
+              <a href="isparta-suyu-neden-sert.html" class="read-more-link">Okumaya Devam Et →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Kart 2: Cihaz Seçim Rehberi -->
+        <article class="blog-card">
+          <div class="blog-card-visual bc-2">💧</div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span class="tag">Satın Alma Rehberi</span>
+              <time datetime="2026-05-28">28 Mayıs 2026</time>
+            </div>
+            <h3><a href="su-aritma-cihazi-nasil-secilir.html">Eviniz İçin En Doğru Su Arıtma Cihazı Nasıl Seçilir?</a></h3>
+            <p>Açık kasa - kapalı kasa farkları, filtre aşamalarının işlevleri, pompalı ve pompasız modeller ile NSF sertifikalı depolama tanklarının seçimi hakkında bilmeniz gereken tüm detaylar.</p>
+            <div class="blog-card-footer">
+              <a href="su-aritma-cihazi-nasil-secilir.html" class="read-more-link">Okumaya Devam Et →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Kart 3: Bakım ve Filtre Değişimi -->
+        <article class="blog-card">
+          <div class="blog-card-visual bc-3">🛠️</div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span class="tag">Bakım & Servis</span>
+              <time datetime="2026-05-25">25 Mayıs 2026</time>
+            </div>
+            <h3><a href="su-aritma-bakim-rehberi.html">Su Arıtma Cihazı Filtre Değişim ve Periyodik Bakım Kılavuzu</a></h3>
+            <p>Ön sediment, aktif karbon, blok karbon filtreler ile membran filtrelerin görevleri ve değişim sıklığı. Zamanında yapılan filtre değişiminin arıtılmış su kalitesine katkısı.</p>
+            <div class="blog-card-footer">
+              <a href="su-aritma-bakim-rehberi.html" class="read-more-link">Okumaya Devam Et →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Kart 4: Damacana vs Su Arıtma -->
+        <article class="blog-card">
+          <div class="blog-card-visual bc-4">💰</div>
+          <div class="blog-card-content">
+            <div class="blog-card-meta">
+              <span class="tag">Karşılaştırma</span>
+              <time datetime="2026-05-22">22 Mayıs 2026</time>
+            </div>
+            <h3><a href="damacana-vs-su-aritma.html">Damacana Su Kullanımı ile Su Arıtma Cihazı Karşılaştırması</a></h3>
+            <p>Damacana suların plastik mikropartikül riskleri, depolama koşullarındaki hijyen problemleri ve bütçeniz üzerindeki yıllık birikimli maliyetlerin su arıtma sistemleriyle amortisman kıyası.</p>
+            <div class="blog-card-footer">
+              <a href="damacana-vs-su-aritma.html" class="read-more-link">Okumaya Devam Et →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer class="footer">
+      <a href="index.html" class="footer-brand">Kale Su Arıtma</a>
+      <div class="footer-links">
+        <a href="index.html#faydalar">Faydalar</a>
+        <a href="index.html#urunler">Ürünler</a>
+        <a href="index.html#yorumlar">Yorumlar</a>
+        <a href="index.html#iletisim">İletişim</a>
+        <a href="blog.html">Blog</a>
+      </div>
+      <p>&copy; 2026 Kale Su Arıtma. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+  </div>
+</body>
+</html>
