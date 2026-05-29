@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.kalesuaritma.com/sitemap.xml
+Sitemap: https://ispartaaritmakale.vercel.app/sitemap.xml
