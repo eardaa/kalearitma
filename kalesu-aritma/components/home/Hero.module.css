@@ -1,0 +1,35 @@
+.hero {
+  padding-top: 180px; padding-bottom: 100px; text-align: center;
+  display: flex; flex-direction: column; align-items: center; gap: 24px;
+}
+.heroBadge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: oklch(94% 0.012 250); border: 1px solid var(--border);
+  border-radius: 999px; padding: 7px 20px; font-size: 13px;
+  font-weight: 600; color: var(--muted); letter-spacing: 0.02em;
+}
+.heroBadge span {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: oklch(65% 0.2 140);
+  box-shadow: 0 0 8px oklch(65% 0.2 140 / 0.45);
+}
+.hero h1 {
+  font-family: var(--font-display); font-size: clamp(40px, 7.5vw, 74px);
+  font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; max-width: 780px;
+}
+.hero h1 em { font-style: normal; color: var(--accent); }
+.hero p {
+  font-size: clamp(17px, 2.2vw, 21px); color: var(--muted);
+  max-width: 560px; line-height: 1.5;
+}
+.heroActions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; align-items: center; }
+.heroActions .micro { font-size: 13px; color: var(--muted); width: 100%; text-align: center; margin-top: -6px; }
+
+@media (max-width: 768px) {
+  .hero { padding-top: 140px; padding-bottom: 60px; }
+}
+@media (max-width: 480px) {
+  .hero h1 { font-size: 34px; }
+  .hero p { font-size: 16px; }
+  .heroActions { flex-direction: column; width: 100%; }
+}

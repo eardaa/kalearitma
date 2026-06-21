@@ -1,0 +1,14 @@
+.footer {
+  border-top: 1px solid var(--border); padding: 40px 24px;
+  max-width: 1200px; margin: 0 auto;
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 16px; font-size: 14px; color: var(--muted);
+}
+.footerBrand { font-weight: 700; color: var(--fg); font-family: var(--font-display); text-decoration: none; }
+.footerLinks { display: flex; gap: 20px; }
+.footerLinks a { color: var(--muted); text-decoration: none; transition: color 0.12s; }
+.footerLinks a:hover { color: var(--fg); }
+
+@media (max-width: 768px) {
+  .footer { flex-direction: column; text-align: center; }
+}

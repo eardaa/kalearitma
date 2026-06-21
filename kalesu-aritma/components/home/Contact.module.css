@@ -1,0 +1,49 @@
+.contactSection { padding: 100px 24px; background: var(--warm-bg); }
+.contactSectionInner { max-width: 1200px; margin: 0 auto; }
+.contactGrid { display: flex; justify-content: center; max-width: 1100px; margin: 0 auto; }
+.contactCard {
+  background: var(--surface); border-radius: var(--radius-xl);
+  padding: 40px 32px;
+  box-shadow: 0 1px 0 oklch(0% 0 0 / 0.04), 0 3px 16px oklch(0% 0 0 / 0.04);
+  display: flex; flex-direction: column; gap: 16px;
+  align-items: center; text-align: center; max-width: 440px; width: 100%;
+  border: 1px solid var(--border);
+}
+.contactIcon {
+  width: 56px; height: 56px; border-radius: 50%;
+  background: oklch(93% 0.03 210); color: var(--accent);
+  display: grid; place-items: center; font-size: 24px;
+}
+.contactCard h3 { font-family: var(--font-display); font-size: 18px; font-weight: 650; }
+.contactCard p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+.phoneLink {
+  color: var(--accent); text-decoration: none; font-weight: 700;
+  font-size: 22px; letter-spacing: 0.01em;
+  transition: opacity 0.12s;
+}
+.phoneLink:hover { opacity: 0.8; }
+.hoursText { font-size: 13px; color: var(--muted); margin-top: 0; }
+.btnMaps {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #fff; color: #1a73e8;
+  font-family: var(--font-body); font-size: 15px; font-weight: 600;
+  padding: 12px 24px;
+  border-radius: var(--radius-xl);
+  border: 1.5px solid #dadce0;
+  cursor: pointer; text-decoration: none; white-space: nowrap;
+  transition: background-color 0.12s, box-shadow 0.12s;
+  margin-top: 4px;
+}
+.btnMaps:hover {
+  background: #f8fbff;
+  box-shadow: 0 2px 12px oklch(0% 0 0 / 0.08);
+}
+.btnMaps svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+@media (max-width: 768px) {
+  .contactSection { padding: 64px 20px; }
+}
+@media (max-width: 480px) {
+  .contactCard { padding: 32px 24px; }
+  .phoneLink { font-size: 20px; }
+}

@@ -1,0 +1,79 @@
+/* ═══════ DESIGN TOKENS ═══════ */
+:root {
+  --bg:      oklch(97.5% 0.003 240);
+  --canvas:  oklch(99% 0.001 240);
+  --fg:      oklch(16% 0.015 250);
+  --muted:   oklch(44% 0.014 250);
+  --border:  oklch(90% 0.006 250);
+  --accent:  oklch(55% 0.17 210);
+  --surface: oklch(100% 0 0);
+  --warm-bg: oklch(96% 0.006 240);
+  --star:    oklch(72% 0.18 85);
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 28px;
+  --radius-xl: 36px;
+  --font-display: -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, 'SF Pro Text', system-ui, sans-serif;
+}
+
+/* ═══════ RESET ═══════ */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--canvas);
+  color: var(--fg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.page { position: relative; z-index: 1; }
+
+section {
+  padding: 100px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ═══════ SECTION HEADER ═══════ */
+.section-header { text-align: center; margin-bottom: 60px; }
+.section-label {
+  font-size: 13px; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 12px;
+}
+.section-header h2 {
+  font-family: var(--font-display); font-size: clamp(30px, 5vw, 50px);
+  font-weight: 700; letter-spacing: -0.02em; line-height: 1.15;
+}
+.section-header p { color: var(--muted); font-size: 17px; max-width: 520px; margin: 12px auto 0; }
+
+/* ═══════ BUTTONS ═══════ */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-body); font-size: 16px; font-weight: 600;
+  padding: 15px 30px; border-radius: var(--radius-xl); border: none;
+  cursor: pointer; text-decoration: none; white-space: nowrap;
+  transition: box-shadow 0.15s;
+}
+.btn-primary {
+  background: var(--accent); color: #fff;
+  box-shadow: 0 4px 20px oklch(55% 0.17 210 / 0.22);
+}
+.btn-primary:hover { box-shadow: 0 6px 28px oklch(55% 0.17 210 / 0.32); }
+.btn-outline-light { background: transparent; color: var(--fg); border: 1.5px solid var(--border); }
+
+/* ═══════ RESPONSIVE ═══════ */
+@media (max-width: 768px) {
+  section { padding: 64px 20px; }
+  .btn { width: 100%; justify-content: center; }
+}
+@media (max-width: 480px) {
+  .section-header h2 { font-size: 28px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0s !important; transition-delay: 0s !important; }
+}

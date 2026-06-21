@@ -1,0 +1,28 @@
+.storySection { background: var(--warm-bg); padding: 100px 24px; }
+.storySectionInner { max-width: 1200px; margin: 0 auto; }
+.storyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px; max-width: 1100px; margin: 0 auto;
+}
+.storyCard {
+  background: var(--surface); border-radius: var(--radius-xl);
+  padding: 36px 28px;
+  box-shadow: 0 1px 0 oklch(0% 0 0 / 0.04), 0 3px 12px oklch(0% 0 0 / 0.04);
+  display: flex; flex-direction: column; gap: 14px;
+}
+.storyBadge {
+  display: inline-flex; align-self: flex-start; font-size: 12px;
+  font-weight: 700; letter-spacing: 0.05em; padding: 5px 14px;
+  border-radius: 999px; text-transform: uppercase;
+}
+.sbProblem { background: oklch(93% 0.03 25); color: oklch(45% 0.15 25); }
+.sbSolution { background: oklch(92% 0.04 210); color: oklch(45% 0.16 210); }
+.sbResult { background: oklch(91% 0.04 160); color: oklch(45% 0.14 160); }
+.storyCard h3 { font-family: var(--font-display); font-size: 22px; font-weight: 650; }
+.storyCard p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+
+@media (max-width: 768px) {
+  .storySection { padding: 64px 20px; }
+  .storyGrid { grid-template-columns: 1fr; gap: 20px; }
+}
