@@ -1,5 +1,1 @@
-{
-  "dependencies": {
-    "@anthropic-ai/claude-code-win32-x64": "^2.1.185"
-  }
-}
+{}
