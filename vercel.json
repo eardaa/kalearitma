@@ -1,5 +1,3 @@
 {
-  "installCommand": "npm --prefix kalesu-aritma install",
-  "buildCommand": "npm --prefix kalesu-aritma run build",
-  "framework": "nextjs"
+  "buildCommand": "cd kalesu-aritma && npm install && npm run build"
 }
