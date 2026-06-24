@@ -5,11 +5,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Isparta Su Arıtma Cihazı | Kale Su Arıtma — Ücretsiz Kurulum",
+    default: "Isparta Su Arıtma Cihazı | Kale Su Arıtma",
     template: "%s | Kale Su Arıtma",
   },
   description:
-    "Isparta'da su arıtma cihazı satış, kurulum ve bakım hizmetleri. Conax yetkili satıcısı. Hemen arayın, ücretsiz kurulum fırsatı.",
+    "Isparta'da su arıtma cihazı satış, kurulum ve bakım hizmetleri. Conax yetkili satıcısı. Hemen arayın.",
   metadataBase: new URL("https://ispartaaritmakale.vercel.app"),
   alternates: {
     canonical: "/",
