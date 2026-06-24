@@ -1,4 +1,4 @@
 {
-  "installCommand": "cd kalesu-aritma && npm install",
-  "buildCommand": "cd kalesu-aritma && npm run build"
+  "installCommand": "npm --prefix kalesu-aritma install",
+  "buildCommand": "npm --prefix kalesu-aritma run build"
 }
