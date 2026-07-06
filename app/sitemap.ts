@@ -2,7 +2,7 @@ import { type MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blog-posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://ispartaaritmakale.vercel.app";
+  const baseUrl = "https://www.ispartakalearitma.com";
 
   const blogUrls = blogPosts.map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,

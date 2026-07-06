@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${post.title} | Kale Su Arıtma`,
       description: post.description,
-      url: `https://ispartaaritmakale.vercel.app/blog/${post.slug}`,
+      url: `https://www.ispartakalearitma.com/blog/${post.slug}`,
     },
   };
 }
@@ -77,12 +77,12 @@ export default async function BlogPostPage({ params }: Props) {
               name: "Kale Su Arıtma",
               logo: {
                 "@type": "ImageObject",
-                url: "https://ispartaaritmakale.vercel.app/kale-su-aritma-logo.webp",
+                url: "https://www.ispartakalearitma.com/kale-su-aritma-logo.webp",
               },
             },
             mainEntityOfPage: {
               "@type": "WebPage",
-              "@id": `https://ispartaaritmakale.vercel.app/blog/${post.slug}`,
+              "@id": `https://www.ispartakalearitma.com/blog/${post.slug}`,
             },
           }),
         }}

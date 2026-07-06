@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://ispartaaritmakale.vercel.app/sitemap.xml",
+    sitemap: "https://www.ispartakalearitma.com/sitemap.xml",
   };
 }

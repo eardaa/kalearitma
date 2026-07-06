@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     title: "Su Arıtma ve Sağlıklı Yaşam Blogu | Kale Su Arıtma",
     description:
       "Isparta su kalitesi, cihaz seçimi ve filtre bakımı hakkında bilmeniz gereken her şey.",
-    url: "https://ispartaaritmakale.vercel.app/blog",
+    url: "https://www.ispartakalearitma.com/blog",
   },
 };
 

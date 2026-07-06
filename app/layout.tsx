@@ -10,20 +10,20 @@ export const metadata: Metadata = {
   },
   description:
     "Isparta'da su arıtma cihazı satış, kurulum ve bakım hizmetleri. Conax yetkili satıcısı. Hemen arayın.",
-  metadataBase: new URL("https://ispartaaritmakale.vercel.app"),
+  metadataBase: new URL("https://www.ispartakalearitma.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://ispartaaritmakale.vercel.app",
+    url: "https://www.ispartakalearitma.com",
     title: "Isparta Su Arıtma Cihazı | Kale Su Arıtma",
     description:
       "Isparta'da su arıtma cihazı kurulum ve bakımı. Hemen arayın.",
     images: [
       {
-        url: "https://ispartaaritmakale.vercel.app/og-image.jpg",
+        url: "https://www.ispartakalearitma.com/og-image.jpg",
       },
     ],
   },
@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 latitude: 37.7648,
                 longitude: 30.5566,
               },
-              url: "https://ispartaaritmakale.vercel.app",
+              url: "https://www.ispartakalearitma.com",
               priceRange: "₺₺",
               openingHours: "Mo-Sa 09:00-20:00",
               areaServed: {
