@@ -23,12 +23,19 @@ export const metadata: Metadata = {
       "Isparta'da su arıtma cihazı kurulum ve bakımı. Hemen arayın.",
     images: [
       {
-        url: "https://www.ispartakalearitma.com/og-image.jpg",
+        url: "https://www.ispartakalearitma.com/og-image.png",
+        width: 256,
+        height: 256,
+        alt: "Kale Su Arıtma - Isparta Su Arıtma Cihazı",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
+    title: "Isparta Su Arıtma Cihazı | Kale Su Arıtma",
+    description:
+      "Isparta'da su arıtma cihazı kurulum ve bakımı. Hemen arayın.",
+    images: ["https://www.ispartakalearitma.com/og-image.png"],
   },
   robots: {
     index: true,
@@ -38,7 +45,14 @@ export const metadata: Metadata = {
     google: "lVr6zNbcxAWtaqw5HVDfekArA8FmJWHFIf_xStvDAn8",
   },
   icons: {
-    icon: "/kale-su-aritma-logo.webp",
+    icon: [
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icon-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
   },
 };
 
