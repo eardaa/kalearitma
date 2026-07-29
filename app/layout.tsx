@@ -23,9 +23,9 @@ export const metadata: Metadata = {
       "Isparta'da su arıtma cihazı kurulum ve bakımı. Hemen arayın.",
     images: [
       {
-        url: "https://www.ispartakalearitma.com/og-image.png",
-        width: 256,
-        height: 256,
+        url: "https://www.ispartakalearitma.com/og-image.jpg",
+        width: 1200,
+        height: 630,
         alt: "Kale Su Arıtma - Isparta Su Arıtma Cihazı",
       },
     ],
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Isparta Su Arıtma Cihazı | Kale Su Arıtma",
     description:
       "Isparta'da su arıtma cihazı kurulum ve bakımı. Hemen arayın.",
-    images: ["https://www.ispartakalearitma.com/og-image.png"],
+    images: ["https://www.ispartakalearitma.com/og-image.jpg"],
   },
   robots: {
     index: true,
