@@ -23,9 +23,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `/blog/${post.slug}`,
     },
     openGraph: {
+      type: "article",
       title: `${post.title} | Kale Su Arıtma`,
       description: post.description,
       url: `https://www.ispartakalearitma.com/blog/${post.slug}`,
+      publishedTime: post.date,
+      images: [
+        {
+          url: "https://www.ispartakalearitma.com/og-image.jpg",
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        },
+      ],
     },
   };
 }
@@ -68,9 +78,14 @@ export default async function BlogPostPage({ params }: Props) {
             headline: post.title,
             description: post.description,
             datePublished: post.date,
+            dateModified: post.date,
+            inLanguage: "tr-TR",
+            isAccessibleForFree: true,
+            image: "https://www.ispartakalearitma.com/og-image.jpg",
             author: {
               "@type": "Organization",
               name: "Kale Su Arıtma",
+              url: "https://www.ispartakalearitma.com",
             },
             publisher: {
               "@type": "Organization",

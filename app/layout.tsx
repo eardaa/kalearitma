@@ -71,23 +71,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
+              "@id": "https://www.ispartakalearitma.com/#localbusiness",
               name: "Kale Su Arıtma",
               description:
                 "Isparta'da su arıtma cihazı satış, kurulum ve bakım hizmetleri. Conax yetkili satıcısı.",
+              image: "https://www.ispartakalearitma.com/kale-su-aritma-logo.webp",
+              logo: "https://www.ispartakalearitma.com/kale-su-aritma-logo.webp",
               telephone: "+905462574773",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "Adres Bilgisini Buraya Girin",
-                addressLocality: "Isparta",
-                addressRegion: "Isparta",
-                postalCode: "32000",
-                addressCountry: "TR",
-              },
-              geo: {
-                "@type": "GeoCoordinates",
-                latitude: 37.7648,
-                longitude: 30.5566,
-              },
               url: "https://www.ispartakalearitma.com",
               priceRange: "₺₺",
               openingHours: "Mo-Sa 09:00-20:00",
@@ -95,6 +85,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "@type": "City",
                 name: "Isparta",
               },
+              sameAs: ["https://share.google/2eNqfl5oj2Eg3YlaW"],
               serviceType: "Su Arıtma Cihazı Satış Kurulum ve Bakımı",
             }),
           }}

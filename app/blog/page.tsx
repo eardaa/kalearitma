@@ -15,6 +15,14 @@ export const metadata: Metadata = {
     description:
       "Isparta su kalitesi, cihaz seçimi ve filtre bakımı hakkında bilmeniz gereken her şey.",
     url: "https://www.ispartakalearitma.com/blog",
+    images: [
+      {
+        url: "https://www.ispartakalearitma.com/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Kale Su Arıtma - Su Arıtma ve Sağlıklı Yaşam Blogu",
+      },
+    ],
   },
 };
 

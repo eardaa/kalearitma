@@ -16,7 +16,7 @@ export default function Contact() {
               +90 (546) 257 47 73
             </a>
             <a
-              href="https://maps.google.com/?q=Kale+Su+Arıtma+Isparta"
+              href="https://share.google/2eNqfl5oj2Eg3YlaW"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.btnMaps}
